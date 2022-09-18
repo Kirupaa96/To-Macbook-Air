@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-15T22:48:26 GMT-07:00" name="Default suite" finished-at="2022-06-15T22:48:31 GMT-07:00" duration-ms="4988">
+    <groups>
+    </groups>
+    <test started-at="2022-06-15T22:48:26 GMT-07:00" name="Default test" finished-at="2022-06-15T22:48:31 GMT-07:00" duration-ms="4988">
+      <class name="Get_req_2">
+        <test-method signature="google_maps()[pri:0, instance:Get_req_2@53fdffa1]" started-at="2022-06-15T22:48:27 GMT-07:00" name="google_maps" finished-at="2022-06-15T22:48:31 GMT-07:00" duration-ms="4870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google_maps -->
+      </class> <!-- Get_req_2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
