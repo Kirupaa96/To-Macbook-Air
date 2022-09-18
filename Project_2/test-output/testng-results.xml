@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="12" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-30T23:40:12 GMT-07:00" name="Suite" finished-at="2022-04-30T23:48:41 GMT-07:00" duration-ms="509002">
+    <groups>
+    </groups>
+    <test started-at="2022-04-30T23:40:12 GMT-07:00" name="ChromeTest" finished-at="2022-04-30T23:42:41 GMT-07:00" duration-ms="148975">
+      <class name="com.automationpractice.www.testscripts.Test_scenario_8">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_8@6bd61f98]" started-at="2022-04-30T23:41:47 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:41:56 GMT-07:00" duration-ms="8820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario8()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_8@6bd61f98]" started-at="2022-04-30T23:41:56 GMT-07:00" name="scenario8" finished-at="2022-04-30T23:42:01 GMT-07:00" duration-ms="4763" status="FAIL">
+          <exception class="org.openqa.selenium.JavascriptException">
+            <message>
+              <![CDATA[javascript error: arguments[0].scrollIntoview is not a function
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f3ecb5fa50303c6182a0f303868187d, executeScript {script=arguments[0].scrollIntoview();, args=[{ELEMENT=4656c3ed-daa5-47f3-b3de-0587f66094ca, element-6066-11e4-a52e-4f735466cecf=4656c3ed-daa5-47f3-b3de-0587f66094ca}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:4097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4097/devtool..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f3ecb5fa50303c6182a0f303868187d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: arguments[0].scrollIntoview is not a function
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f3ecb5fa50303c6182a0f303868187d, executeScript {script=arguments[0].scrollIntoview();, args=[{ELEMENT=4656c3ed-daa5-47f3-b3de-0587f66094ca, element-6066-11e4-a52e-4f735466cecf=4656c3ed-daa5-47f3-b3de-0587f66094ca}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:4097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4097/devtool..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f3ecb5fa50303c6182a0f303868187d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:492)
+at com.automationpractice.www.pages.Placing_order.purchase_prod(Placing_order.java:85)
+at com.automationpractice.www.testscripts.Test_scenario_8.scenario8(Test_scenario_8.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario8 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_8@6bd61f98]" started-at="2022-04-30T23:42:01 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:42:01 GMT-07:00" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_8 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_1">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_1@4efac082]" started-at="2022-04-30T23:41:30 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:41:38 GMT-07:00" duration-ms="8196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario1()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_1@4efac082]" started-at="2022-04-30T23:41:38 GMT-07:00" name="scenario1" finished-at="2022-04-30T23:41:47 GMT-07:00" duration-ms="8017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_1@4efac082]" started-at="2022-04-30T23:41:47 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:41:47 GMT-07:00" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_1 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_2">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_2@59505b48]" started-at="2022-04-30T23:41:05 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:41:18 GMT-07:00" duration-ms="13182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario2()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_2@59505b48]" started-at="2022-04-30T23:41:18 GMT-07:00" name="scenario2" finished-at="2022-04-30T23:41:25 GMT-07:00" duration-ms="6856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method signature="scenario2_1()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_2@59505b48]" started-at="2022-04-30T23:41:25 GMT-07:00" name="scenario2_1" finished-at="2022-04-30T23:41:30 GMT-07:00" duration-ms="5358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2_1 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_2@59505b48]" started-at="2022-04-30T23:41:30 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:41:30 GMT-07:00" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_2 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_3">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_3@29215f06]" started-at="2022-04-30T23:40:43 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:40:54 GMT-07:00" duration-ms="10144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario_3()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_3@29215f06]" started-at="2022-04-30T23:40:54 GMT-07:00" name="scenario_3" finished-at="2022-04-30T23:41:04 GMT-07:00" duration-ms="10771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario_3 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_3@29215f06]" started-at="2022-04-30T23:41:04 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:41:05 GMT-07:00" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_3 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_4">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_4@2d710f1a]" started-at="2022-04-30T23:40:30 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:40:38 GMT-07:00" duration-ms="8080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario_4()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_4@2d710f1a]" started-at="2022-04-30T23:40:38 GMT-07:00" name="scenario_4" finished-at="2022-04-30T23:40:43 GMT-07:00" duration-ms="4575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario_4 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_4@2d710f1a]" started-at="2022-04-30T23:40:43 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:40:43 GMT-07:00" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_4 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_5">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_5@1b11171f]" started-at="2022-04-30T23:40:12 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:40:22 GMT-07:00" duration-ms="9551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario5()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_5@1b11171f]" started-at="2022-04-30T23:40:22 GMT-07:00" name="scenario5" finished-at="2022-04-30T23:40:30 GMT-07:00" duration-ms="8197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario5 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_5@1b11171f]" started-at="2022-04-30T23:40:30 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:40:30 GMT-07:00" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_5 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_6">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_6@506ae4d4]" started-at="2022-04-30T23:42:23 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:42:29 GMT-07:00" duration-ms="6068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario6()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_6@506ae4d4]" started-at="2022-04-30T23:42:29 GMT-07:00" name="scenario6" finished-at="2022-04-30T23:42:41 GMT-07:00" duration-ms="11949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario6 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_6@506ae4d4]" started-at="2022-04-30T23:42:41 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:42:41 GMT-07:00" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_6 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_7">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_7@b9b00e0]" started-at="2022-04-30T23:42:01 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:42:12 GMT-07:00" duration-ms="11065" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario7()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_7@b9b00e0]" started-at="2022-04-30T23:42:12 GMT-07:00" name="scenario7" finished-at="2022-04-30T23:42:22 GMT-07:00" duration-ms="10212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario7 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_7@b9b00e0]" started-at="2022-04-30T23:42:22 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:42:23 GMT-07:00" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_7 -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2022-04-30T23:42:41 GMT-07:00" name="FirefoxTest" finished-at="2022-04-30T23:48:41 GMT-07:00" duration-ms="359941">
+      <class name="com.automationpractice.www.testscripts.Test_scenario_8">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_8@4145bad8]" started-at="2022-04-30T23:47:08 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:47:25 GMT-07:00" duration-ms="17019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario8()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_8@4145bad8]" started-at="2022-04-30T23:47:25 GMT-07:00" name="scenario8" finished-at="2022-04-30T23:47:33 GMT-07:00" duration-ms="7613" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a href="http://automationpractice.com/index.php?id_category=9&controller=category"> could not be scrolled into view
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d2c277b2-4268-4c7f-bb22-35a3a65df14e, clickElement {id=80ad85e9-0f86-490b-b642-e695bb7372eb}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:56129, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 14448, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56129/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (d2c277b2-4268-4c7f-bb22-35a3a65df14e)] -> css selector: #block_top_menu > ul > li:nth-child(2) > ul > li:nth-child(1) > a]
+Session ID: d2c277b2-4268-4c7f-bb22-35a3a65df14e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="http://automationpractice.com/index.php?id_category=9&controller=category"> could not be scrolled into view
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d2c277b2-4268-4c7f-bb22-35a3a65df14e, clickElement {id=80ad85e9-0f86-490b-b642-e695bb7372eb}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:56129, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 14448, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56129/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (d2c277b2-4268-4c7f-bb22-35a3a65df14e)] -> css selector: #block_top_menu > ul > li:nth-child(2) > ul > li:nth-child(1) > a]
+Session ID: d2c277b2-4268-4c7f-bb22-35a3a65df14e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.automationpractice.www.pages.Placing_order.purchase_prod(Placing_order.java:82)
+at com.automationpractice.www.testscripts.Test_scenario_8.scenario8(Test_scenario_8.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario8 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_8@4145bad8]" started-at="2022-04-30T23:47:33 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:47:35 GMT-07:00" duration-ms="2163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_8 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_1">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_1@63376bed]" started-at="2022-04-30T23:46:16 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:46:32 GMT-07:00" duration-ms="16267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario1()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_1@63376bed]" started-at="2022-04-30T23:46:32 GMT-07:00" name="scenario1" finished-at="2022-04-30T23:47:05 GMT-07:00" duration-ms="32276" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #id_gender1
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8f17327e-363e-4c83-baf6-bf1a7f878ee9, findElement {using=id, value=id_gender1}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:52396, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 13984, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:52396/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8f17327e-363e-4c83-baf6-bf1a7f878ee9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #id_gender1
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8f17327e-363e-4c83-baf6-bf1a7f878ee9, findElement {using=id, value=id_gender1}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:52396, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 13984, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:52396/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8f17327e-363e-4c83-baf6-bf1a7f878ee9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.automationpractice.www.pages.Account_creation.persnl_info(Account_creation.java:93)
+at com.automationpractice.www.testscripts.Test_scenario_1.scenario1(Test_scenario_1.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_1@63376bed]" started-at="2022-04-30T23:47:05 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:47:08 GMT-07:00" duration-ms="3245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_1 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_2">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_2@3c77d488]" started-at="2022-04-30T23:45:50 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:46:00 GMT-07:00" duration-ms="10347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario2()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_2@3c77d488]" started-at="2022-04-30T23:46:00 GMT-07:00" name="scenario2" finished-at="2022-04-30T23:46:06 GMT-07:00" duration-ms="5708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method signature="scenario2_1()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_2@3c77d488]" started-at="2022-04-30T23:46:06 GMT-07:00" name="scenario2_1" finished-at="2022-04-30T23:46:11 GMT-07:00" duration-ms="5276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2_1 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_2@3c77d488]" started-at="2022-04-30T23:46:11 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:46:16 GMT-07:00" duration-ms="4938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_2 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_3">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_3@738dc9b]" started-at="2022-04-30T23:44:53 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:45:11 GMT-07:00" duration-ms="18186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario_3()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_3@738dc9b]" started-at="2022-04-30T23:45:11 GMT-07:00" name="scenario_3" finished-at="2022-04-30T23:45:47 GMT-07:00" duration-ms="35928" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #id_gender1
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [20dc39ba-a2c5-4626-a106-875570d1a54e, findElement {using=id, value=id_gender1}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:53648, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 8928, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53648/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 20dc39ba-a2c5-4626-a106-875570d1a54e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #id_gender1
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [20dc39ba-a2c5-4626-a106-875570d1a54e, findElement {using=id, value=id_gender1}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:53648, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 8928, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53648/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 20dc39ba-a2c5-4626-a106-875570d1a54e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.automationpractice.www.pages.Account_creation.persnl_info(Account_creation.java:93)
+at com.automationpractice.www.testscripts.Test_scenario_3.scenario_3(Test_scenario_3.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario_3 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_3@738dc9b]" started-at="2022-04-30T23:45:47 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:45:50 GMT-07:00" duration-ms="2739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_3 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_4">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_4@71ba6d4e]" started-at="2022-04-30T23:44:17 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:44:34 GMT-07:00" duration-ms="16572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario_4()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_4@71ba6d4e]" started-at="2022-04-30T23:44:34 GMT-07:00" name="scenario_4" finished-at="2022-04-30T23:44:45 GMT-07:00" duration-ms="11203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario_4 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_4@71ba6d4e]" started-at="2022-04-30T23:44:45 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:44:53 GMT-07:00" duration-ms="7807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_4 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_5">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_5@55a147cc]" started-at="2022-04-30T23:42:41 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:43:52 GMT-07:00" duration-ms="70641" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario5()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_5@55a147cc]" started-at="2022-04-30T23:43:52 GMT-07:00" name="scenario5" finished-at="2022-04-30T23:44:07 GMT-07:00" duration-ms="15054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario5 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_5@55a147cc]" started-at="2022-04-30T23:44:07 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:44:17 GMT-07:00" duration-ms="10468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_5 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_6">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_6@2892d68]" started-at="2022-04-30T23:48:05 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:48:31 GMT-07:00" duration-ms="25302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario6()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_6@2892d68]" started-at="2022-04-30T23:48:31 GMT-07:00" name="scenario6" finished-at="2022-04-30T23:48:36 GMT-07:00" duration-ms="5208" status="FAIL">
+          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
+            <message>
+              <![CDATA[(609, 767) is out of bounds of viewport width (1536) and height (739)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8d65719a-dc25-4c82-a712-bb9c97654a74, actions {actions=[org.openqa.selenium.interactions.Sequence@1c4aa701]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:56812, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 11848, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56812/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8d65719a-dc25-4c82-a712-bb9c97654a74]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (609, 767) is out of bounds of viewport width (1536) and height (739)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8d65719a-dc25-4c82-a712-bb9c97654a74, actions {actions=[org.openqa.selenium.interactions.Sequence@1c4aa701]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:56812, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 11848, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56812/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8d65719a-dc25-4c82-a712-bb9c97654a74
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+at com.automationpractice.www.pages.Reviews.pro_review(Reviews.java:61)
+at com.automationpractice.www.testscripts.Test_scenario_6.scenario6(Test_scenario_6.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario6 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_6@2892d68]" started-at="2022-04-30T23:48:36 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:48:41 GMT-07:00" duration-ms="5516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_6 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_7">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_7@d86a6f]" started-at="2022-04-30T23:47:35 GMT-07:00" name="openApplication" finished-at="2022-04-30T23:47:52 GMT-07:00" duration-ms="16764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="scenario7()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_7@d86a6f]" started-at="2022-04-30T23:47:52 GMT-07:00" name="scenario7" finished-at="2022-04-30T23:48:03 GMT-07:00" duration-ms="11079" status="FAIL">
+          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
+            <message>
+              <![CDATA[(609, 767) is out of bounds of viewport width (1536) and height (739)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [37e8d4d5-57d0-4f56-afdd-0efab3bd73d0, actions {actions=[org.openqa.selenium.interactions.Sequence@42b500aa]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:61036, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 14224, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:61036/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 37e8d4d5-57d0-4f56-afdd-0efab3bd73d0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (609, 767) is out of bounds of viewport width (1536) and height (739)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-MP5P5GA', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [37e8d4d5-57d0-4f56-afdd-0efab3bd73d0, actions {actions=[org.openqa.selenium.interactions.Sequence@42b500aa]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:61036, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 14224, moz:profile: C:\Users\WELCOME\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:61036/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 37e8d4d5-57d0-4f56-afdd-0efab3bd73d0
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+at com.automationpractice.www.pages.Reviews.fb_share(Reviews.java:81)
+at com.automationpractice.www.testscripts.Test_scenario_7.scenario7(Test_scenario_7.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario7 -->
+        <test-method is-config="true" signature="cloaseApplication()[pri:0, instance:com.automationpractice.www.testscripts.Test_scenario_7@d86a6f]" started-at="2022-04-30T23:48:03 GMT-07:00" name="cloaseApplication" finished-at="2022-04-30T23:48:05 GMT-07:00" duration-ms="2588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApplication -->
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_7 -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>

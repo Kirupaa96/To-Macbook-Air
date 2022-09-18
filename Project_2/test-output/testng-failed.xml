@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.automationpractice.www.testscripts.Test_scenario_8">
+        <methods>
+          <include name="openApplication"/>
+          <include name="cloaseApplication"/>
+          <include name="scenario8"/>
+        </methods>
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_8 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.automationpractice.www.testscripts.Test_scenario_8">
+        <methods>
+          <include name="openApplication"/>
+          <include name="cloaseApplication"/>
+          <include name="scenario8"/>
+        </methods>
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_8 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_1">
+        <methods>
+          <include name="openApplication"/>
+          <include name="cloaseApplication"/>
+          <include name="scenario1"/>
+        </methods>
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_1 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_6">
+        <methods>
+          <include name="openApplication"/>
+          <include name="cloaseApplication"/>
+          <include name="scenario6"/>
+        </methods>
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_6 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_3">
+        <methods>
+          <include name="openApplication"/>
+          <include name="scenario_3"/>
+          <include name="cloaseApplication"/>
+        </methods>
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_3 -->
+      <class name="com.automationpractice.www.testscripts.Test_scenario_7">
+        <methods>
+          <include name="openApplication"/>
+          <include name="cloaseApplication"/>
+          <include name="scenario7"/>
+        </methods>
+      </class> <!-- com.automationpractice.www.testscripts.Test_scenario_7 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
