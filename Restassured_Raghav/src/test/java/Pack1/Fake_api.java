@@ -1,6 +1,6 @@
 package Pack1;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.Test;    
 import static io.restassured.RestAssured.*;
 import org.json.simple.JSONObject;
 import io.restassured.http.ContentType;
